@@ -6,11 +6,7 @@
   <title>My Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -33,42 +29,20 @@
       100% { transform: translateY(0); opacity: 1; }
     }
 
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-    }
+    h1 { font-size: 2.5rem; font-weight: 800; }
+    h2 { font-size: 1.8rem; margin-top: 2rem; color: #ff8a65; }
 
-    h2 {
-      font-size: 1.8rem;
-      margin-top: 2rem;
-      color: #ff8a65;
-    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    .intro {
-      text-align: center;
-      margin-bottom: 2rem;
-      animation: fadeIn 2s ease-in;
-    }
+    .intro { text-align: center; margin-bottom: 2rem; animation: fadeIn 2s ease-in; }
 
     .intro img {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
+      width: 130px; height: 130px; border-radius: 50%;
+      object-fit: cover; margin-bottom: 1rem;
       border: 4px solid #ff8a65;
     }
-#4fc3f7
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
     .projects {
       display: grid;
@@ -90,24 +64,12 @@
       box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
     }
 
-    .project-title {
-      font-weight: 600;
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
-      color: #4fc3f7;
-    }
-
-    .project-description {
-      font-size: 1rem;
-      color: #666;
-    }
+    .project-title { font-weight: 600; font-size: 1.25rem; margin-bottom: 0.5rem; color: #4fc3f7; }
+    .project-description { font-size: 1rem; color: #666; }
 
     .languages {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 2rem;
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 1rem; margin-top: 2rem;
     }
 
     .language-box {
@@ -120,47 +82,18 @@
       transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
-    .language-box:hover {
-      transform: scale(1.1);
-      background-color: #b3e5fc;
-    }
+    .language-box:hover { transform: scale(1.1); background-color: #b3e5fc; }
 
-    .socials {
-      margin-top: 3rem;
-      text-align: center;
-    }
+    .socials { margin-top: 3rem; text-align: center; }
+    .socials a { margin: 0 1rem; text-decoration: none; display: inline-block; }
+    .socials img { width: 32px; height: 32px; transition: transform 0.3s ease; }
+    .socials img:hover { transform: scale(1.2); }
 
-    .socials a {
-      margin: 0 1rem;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .socials img {
-      width: 32px;
-      height: 32px;
-      transition: transform 0.3s ease;
-    }
-
-    .socials img:hover {
-      transform: scale(1.2);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #999;
-      font-size: 0.875rem;
-      margin-top: 4rem;
-    }
+    footer { text-align: center; padding: 1rem; color: #999; font-size: 0.875rem; margin-top: 4rem; }
 
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.5rem;
-      }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
     }
   </style>
 </head>
@@ -175,8 +108,10 @@
       <img src="pfp.png" alt="Profile Picture">
       <h2>About Me</h2>
       <p>
-        I'm a student passionate about building cool and meaningful digital projects.
-        I focus on iOS development, web design, and bringing ideas to life through code.
+        I’m a driven high school student-athlete who builds real projects, not just tutorials.
+        I focus on web and iOS development, and I’ve recently been building Discord bots that recommend
+        music and movies based on user input. I’m learning Java to strengthen my backend and problem-solving
+        skills, and I’m working toward turning my projects into real products.
       </p>
     </section>
 
@@ -187,32 +122,28 @@
         <div class="language-box">HTML</div>
         <div class="language-box">CSS</div>
         <div class="language-box">Swift</div>
-        <!-- Add more languages as needed -->
+        <div class="language-box">Java</div>
       </div>
     </section>
 
     <section>
-    
       <h2>Projects</h2>
       <br>
       <div class="projects">
         <div class="project-card">
           <div class="project-title">The Contract</div>
           <div class="project-description">
-            A productivity app designed to help users build habits, track goals, and reflect on progress.
+            A productivity app to help users commit to habits, track goals, and stay accountable over time.
           </div>
         </div>
-        
-        
-        
+
         <div class="project-card">
-          <div class="project-title">Absence Notifier</div>
+          <div class="project-title">Music & Movie Recommendation Discord Bot</div>
           <div class="project-description">
-            A simple school web app that allows parents to notify teachers about student absences.
+            A Discord bot that recommends songs and movies based on user preferences and commands, built to improve API usage and backend logic.
           </div>
         </div>
       </div>
-      
     </section>
 
     <section class="socials">
@@ -229,8 +160,8 @@
   </div>
 
   <footer>
-  	<p>Built with 💻 and ☕</p>
-    <p>© 2025 Johnson Yang  | All Rights Reserved</p>
+    <p>Built with 💻 and ☕</p>
+    <p>© 2025 Johnson Yang | All Rights Reserved</p>
   </footer>
 </body>
 </html>
